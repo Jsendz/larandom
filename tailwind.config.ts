@@ -12,7 +12,7 @@ const config: Config = {
   theme: {
     backgroundImage: {
       'larandom': "url('/larandom2.webp')",
-      'skyweb': "url('/sky2.webp')",
+      'fondo': "url('/fondo.svg')",
     },
     extend: {
     },

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from '@/app/components/Navbar';
 import {Providers} from "./providers";
 
 
@@ -21,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Providers>
-      <Navbar />
+      
       {children}
       </Providers>
       </body>
