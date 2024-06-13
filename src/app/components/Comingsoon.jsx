@@ -27,12 +27,13 @@ export default function ComingSoon() {
         <div className='w-full h-full md:h-[60%] flex flex-col justify-evenly pl-3 md:pl-5'>
       
         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 text-left pl-4">Arriva un <span className="bg-orange-600 bg-clip-text">nou tipus</span> d'esdeveniment a Andorra</h1>
-        <p className="mt-4 text-2xl text-left pl-4 text-red-500">
+        <p className="mt-4 text-xl md:text-2xl text-left pl-4 text-red-500">
         El nostre lloc web està en construcció.<br />
          Estigueu atents a una cosa sorprenent!
         </p>
 
         {!submitted ? (
+          <div className='w-[90%] md:w-full'>
           <form onSubmit={handleSubmit} className="mt-8 flex items-center">
             <input
               type="email"
@@ -49,6 +50,7 @@ export default function ComingSoon() {
               Subscriure
             </button>
           </form>
+          </div>
         ) : (
           <p className="mt-8 text-xl text-green-600">
             Thank you for subscribing!
