@@ -26,10 +26,10 @@ export default function ComingSoon() {
       <main className="flex flex-col md:flex-row md:items-center justify-around h-full md:h-screen flex-1 text-center bg-slate-100 rounded-xl">
         <div className='w-full h-full md:h-[60%] flex flex-col justify-evenly pl-3 md:pl-5'>
       
-        <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 text-left pl-4">Arriva un <span className="bg-orange-600 bg-clip-text">nou tipus</span> d'esdeveniment a Andorra</h1>
+        <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 text-left pl-4">Arriba un <span className="bg-orange-600 bg-clip-text">nou tipus</span> d'esdeveniment a Andorra</h1>
         <p className="mt-4 text-xl md:text-2xl text-left pl-4 text-red-500">
-        El nostre lloc web està en construcció.<br />
-         Estigueu atents a una cosa sorprenent!
+        La nostra pàgina web segueix en construcció.<br />
+         Estigues atent per una sorpresa!
         </p>
 
         {!submitted ? (
