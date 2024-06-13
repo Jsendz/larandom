@@ -16,25 +16,27 @@ export default function ComingSoon() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 bg-cover bg-no-repeat bg-fondo">
+    <div className="flex justify-center items-center min-h-screen py-2 bg-slate-100">
       <Head>
         <title>Coming Soon</title>
         <meta name="description" content="Our website is coming soon" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center flex-1 px-20 text-center w-[80%] bg-slate-100 rounded-xl">
-      <Image src="/logo.svg" alt="founder's photo" width={200} height={200} className="  " />
-        <h1 className="text-6xl font-bold text-gray-800">Proximament</h1>
-        <p className="mt-4 text-2xl text-gray-600">
-        El nostre lloc web està en construcció. Estigueu atents a alguna cosa sorprenent!
+      <main className="flex flex-col md:flex-row md:items-center justify-around h-full md:h-screen flex-1 text-center bg-slate-100 rounded-xl">
+        <div className='w-full h-full md:h-[60%] flex flex-col justify-evenly pl-3 md:pl-5'>
+      
+        <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 text-left pl-4">Arriva un <span className="bg-orange-600 bg-clip-text">nou tipus</span> d'esdeveniment a Andorra</h1>
+        <p className="mt-4 text-2xl text-left pl-4 text-red-500">
+        El nostre lloc web està en construcció.<br />
+         Estigueu atents a una cosa sorprenent!
         </p>
 
         {!submitted ? (
           <form onSubmit={handleSubmit} className="mt-8 flex items-center">
             <input
               type="email"
-              placeholder="Enter your email"
+              placeholder="Introdueix el teu email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -44,7 +46,7 @@ export default function ComingSoon() {
               type="submit"
               className=" px-6 py-3 bg-blue-600 text-white rounded-md text-lg hover:bg-blue-700"
             >
-              Subscribe
+              Subscriure
             </button>
           </form>
         ) : (
@@ -52,11 +54,13 @@ export default function ComingSoon() {
             Thank you for subscribing!
           </p>
         )}
+        </div>
+        <div className='w-[90%] md:w-full h-full mt-10 md:mt-0 flex items-center justify-center'>
+        <Image src="/logo.svg" alt="founder's photo" width={300} height={300} className="block"  />
+        </div>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24  text-white">
-        © {new Date().getFullYear()} Your Company. All rights reserved.
-      </footer>
+     
     </div>
   );
 }
