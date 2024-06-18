@@ -4,9 +4,9 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { useState } from 'react';
+import Form from './Form'
 
 export default function ComingSoon() {
-  const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
@@ -29,27 +29,12 @@ export default function ComingSoon() {
         <h1 className="text-4xl md:text-6xl font-extrabold text-gray-800 text-left pl-4">Arriba un <span className="bg-orange-600 bg-clip-text">nou tipus</span> d'esdeveniment a Andorra</h1>
         <p className="mt-4 text-xl md:text-2xl text-left pl-4 text-red-500">
         La nostra pàgina web segueix en construcció.<br />
-         Estigues atent per una sorpresa!
+         Estigues atent per una!
         </p>
 
         {!submitted ? (
           <div className='w-[90%] md:w-full'>
-          <form onSubmit={handleSubmit} className="mt-8 flex items-center">
-            <input
-              type="email"
-              placeholder="Introdueix el teu email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              className="p-3 rounded-md border border-gray-300 w-64 text-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-            />
-            <button
-              type="submit"
-              className=" px-6 py-3 bg-blue-600 text-white rounded-md text-lg hover:bg-blue-700"
-            >
-              Subscriure
-            </button>
-          </form>
+          <Form  />
           </div>
         ) : (
           <p className="mt-8 text-xl text-green-600">
