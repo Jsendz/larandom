@@ -18,7 +18,7 @@ export default function ComingSoon() {
   return (
     <div className="flex justify-center items-center min-h-screen py-2 bg-slate-100">
       <Head>
-        <title>Coming Soon</title>
+        <title>LaRandom</title>
         <meta name="description" content="Our website is coming soon" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
