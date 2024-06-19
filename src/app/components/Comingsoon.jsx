@@ -38,7 +38,8 @@ export default function ComingSoon() {
           </div>
         ) : (
           <p className="mt-8 text-xl text-green-600">
-            Thank you for subscribing!
+            Enviat! Gracies.
+            
           </p>
         )}
         </div>
