@@ -34,7 +34,7 @@ export default function ComingSoon() {
 
         {!submitted ? (
           <div className='w-[90%] md:w-full'>
-          <Form  />
+          <Form onSubmit={handleSubmit} />
           </div>
         ) : (
           <p className="mt-8 text-xl text-green-600">
