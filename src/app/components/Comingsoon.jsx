@@ -53,11 +53,11 @@ export default function ComingSoon() {
         </p>
 
         {!submitted ? (
-          <div className='w-[90%] md:w-full'>
+          <div className='w-[90%] md:w-full mt-5 lg:mt-0'>
           <form ref={form} onSubmit={sendEmail}>
-      <label>Email</label>
-      <input type="email" name="user_email" className="p-3 rounded-md border border-gray-300 w-64 text-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
-      <input onSubmit={handleSubmit} type="submit" value="Send" className=" px-6 py-3 bg-blue-600 text-white rounded-md text-lg hover:bg-blue-700"/>
+      
+      <input type="email" name="user_email" className="py-3 rounded-md border border-gray-300 w-64 text-lg focus:outline-none focus:ring-2 focus:ring-blue-600" />
+      <input onSubmit={handleSubmit} type="submit" value="Send" className=" px-2 py-3 bg-blue-600 text-white rounded-md text-lg hover:bg-blue-700"/>
       
     </form>
           </div>
